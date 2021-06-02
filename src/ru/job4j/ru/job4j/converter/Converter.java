@@ -3,33 +3,27 @@ package ru.job4j.ru.job4j.converter;
 public class Converter {
 
     public static float rubleToEuro(float value) {
-        float rte = value / 70;
-        return rte;
+        return value / 70;
     }
 
     public static float rubleToDollar(float value) {
-        float rtd = value / 60;
-        return rtd;
+        return value / 60;
     }
 
     public static float euroToRuble(float value) {
-        float enr = value * 70;
-        return enr;
+        return value * 70;
     }
 
     public static float dollarToRuble(float value) {
-        float dtr = value * 60;
-        return dtr;
+        return value * 60;
     }
 
     public static float euroToDollar(float value) {
-        float etd = (value / 60) * 70;
-        return etd;
+        return (value / 60) * 70;
     }
 
     public static float dollarToEuro(float value) {
-        float dte = (value / 70) * 60;
-        return dte;
+        return (value / 70) * 60;
     }
 
     public static void main(String[] args) {
