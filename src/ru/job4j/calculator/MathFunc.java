@@ -13,3 +13,5 @@ public class MathFunc {
         MathFunc.func1(100);
     }
 }
+
+
