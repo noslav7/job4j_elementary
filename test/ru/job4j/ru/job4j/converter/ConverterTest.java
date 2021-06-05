@@ -17,7 +17,7 @@ public class ConverterTest {
     @Test
     public void whenConvert170RublesThen3Dollars() {
         float rub = 170f;
-        float rTdExpected = 2.8333333f;
+        float rTdExpected = 2.8f;
         float rub4dollar = Converter.rubleToDollar(rub);
         Assert.assertEquals(rTdExpected, rub4dollar, 0.1f);
     }
@@ -41,7 +41,7 @@ public class ConverterTest {
     @Test
     public void whenConvert100EuroThen117Dollars() {
         float euro = 100f;
-        float eTdExpected = 116.666664f;
+        float eTdExpected = 116.7f;
         float euro4dollar = Converter.euroToDollar(euro);
         Assert.assertEquals(eTdExpected, euro4dollar, 0.1f);
     }
@@ -49,7 +49,7 @@ public class ConverterTest {
     @Test
     public void dollarToEuro() {
         float usd = 200f;
-        float dTeExpected = 171.42857f;
+        float dTeExpected = 171.4f;
         float dollar4euro = Converter.dollarToEuro(usd);
         Assert.assertEquals(dTeExpected, dollar4euro, 0.1f);
     }

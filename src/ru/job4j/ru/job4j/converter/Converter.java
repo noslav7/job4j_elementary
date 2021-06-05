@@ -49,7 +49,7 @@ public class Converter {
         System.out.println("100 USD are " + dollar4ruble + " rubles. Test result : " + dollarRuble);
 
         float euro4dollar = Converter.euroToDollar(100f);
-        float eTdExpected = 116.666664f;
+        float eTdExpected = 116.6666664f;
         boolean euroDollar = eTdExpected == euro4dollar;
         System.out.println("100 euro are " + euro4dollar + " USD. Test result : " + euroDollar);
 
