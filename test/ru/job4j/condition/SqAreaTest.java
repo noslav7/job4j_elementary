@@ -17,7 +17,7 @@ public class SqAreaTest {
 
     @Test
     public void square2() {
-        double expected = 4;
+        double expected = 24;
         double perimeter = 20;
         double heightToWidth = 1.5;
         double out = SqArea.square(perimeter, heightToWidth);
@@ -26,7 +26,7 @@ public class SqAreaTest {
 
     @Test
     public void square3() {
-        double expected = 3;
+        double expected = 12;
         double perimeter = 14;
         double heightToWidth = 1.3333333333;
         double out = SqArea.square(perimeter, heightToWidth);
