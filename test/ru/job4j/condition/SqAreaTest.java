@@ -28,7 +28,7 @@ public class SqAreaTest {
     public void square3() {
         double expected = 12;
         double perimeter = 14;
-        double heightToWidth = 1.3333333333;
+        double heightToWidth = 1.33;
         double out = SqArea.square(perimeter, heightToWidth);
         assertEquals(expected, out, 0.01);
     }
