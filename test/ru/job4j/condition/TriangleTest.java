@@ -8,12 +8,12 @@ public class TriangleTest {
 
     @Test
     public void exist() {
-            double ab = 2.0;
-            double ac = 2.0;
-            double bc = 2.0;
-            boolean result = Triangle.exist(ab, ac, bc);
-            assertTrue(result);
-        }
+        double ab = 2.0;
+        double ac = 2.0;
+        double bc = 2.0;
+        boolean result = Triangle.exist(ab, ac, bc);
+        assertTrue(result);
+    }
 
     @Test
     public void doNotExist() {
@@ -24,4 +24,4 @@ public class TriangleTest {
         assertFalse(result);
 
     }
-    }
+}
