@@ -5,8 +5,8 @@ public class Fitness {
         int month = 0;
         while (ivan <= nik) {
         month++;
-        ivan = ivan * 3 * month;
-        nik = nik * 2 * month;
+        ivan *= 3;
+        nik *= 2;
          }
         return month;
     }
