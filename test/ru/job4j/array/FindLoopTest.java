@@ -9,18 +9,18 @@ public class FindLoopTest {
     @Test
     public void whenArrayHas5Then0() {
         int[] data = {5, 4, 3, 2};
-        int el = 2;
+        int el = 5;
         int result = FindLoop.indexOf(data, el);
-        int expected = 3;
+        int expected = 0;
         assertEquals(expected, result);
     }
 
     @Test
     public void whenArrayHas4Then2() {
         int[] data = {5, 4, 3, 2};
-        int el = 4;
+        int el = 0;
         int result = FindLoop.indexOf(data, el);
-        int expected = 2;
+        int expected = -1;
         assertEquals(expected, result);
     }
 }
