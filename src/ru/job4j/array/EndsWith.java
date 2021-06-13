@@ -6,9 +6,6 @@ public class EndsWith {
         if (word[word.length - 1] != post[post.length - 1]) {
                     result = false;
         }
-        if (word[word.length - 2] != post[post.length - 2]) {
-            result = false;
-        }
         return result;
     }
 }
