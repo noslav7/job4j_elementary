@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class MatrixCheckTest {
 
     @Test
-    public void whenHasMonoHorizontal() {
+    public void whenHasMonoHorizontal2() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {'X', 'X', 'X'},
@@ -16,5 +16,9 @@ public class MatrixCheckTest {
         int row = 1;
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertTrue(result);
+
+
+
+
     }
 }
