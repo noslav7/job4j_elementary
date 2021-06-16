@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class DefragmentTest {
 
     @Test
-    public void singleFirstNull() {
+    public void singleFirstNull1() {
         String[] input = {null, "I"};
         String[] result = Defragment.compress(input);
         String[] expected = {"I", null};
@@ -15,7 +15,7 @@ public class DefragmentTest {
     }
 
     @Test
-    public void notFirstNull() {
+    public void notFirstNull2() {
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
         String[] result = Defragment.compress(input);
         String[] expected = {"I", "wanna", "be", "compressed", null, null, null};
@@ -23,7 +23,7 @@ public class DefragmentTest {
     }
 
     @Test
-    public void firstNull() {
+    public void firstNull1() {
         String[] input = {null, "I", "wanna", null, "be", null, "compressed"};
         String[] result = Defragment.compress(input);
         String[] expected = {"I", "wanna", "be", "compressed", null, null, null};
@@ -31,7 +31,7 @@ public class DefragmentTest {
     }
 
     @Test
-    public void notAllNull() {
+    public void notAllNull0() {
         String[] input = {null, null, null};
         String[] result = Defragment.compress(input);
         String[] expected = {null, null, null};
@@ -39,7 +39,7 @@ public class DefragmentTest {
     }
 
     @Test
-    public void notAllAtFirstNull() {
+    public void notAllAtFirstNull10() {
         String[] input = {null, null, null, "I", "wanna", "be", "compressed"};
         String[] result = Defragment.compress(input);
         String[] expected = {"I", "wanna", "be", "compressed", null, null, null};
