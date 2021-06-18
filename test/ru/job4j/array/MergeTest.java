@@ -27,7 +27,7 @@ public class MergeTest {
     }
 
     @Test
-    public void whenAscOrder() {
+    public void whenAscOrder1() {
         int[] expect = {1, 2, 3, 4};
         int[] result = Merge.merge(
                 new int[] {1, 2},
