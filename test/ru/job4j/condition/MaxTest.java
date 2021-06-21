@@ -40,7 +40,7 @@ public class MaxTest {
         int addition = 15;
         int value = 2;
         int result = Max.max(left, right, addition, value);
-        int expected = 80;
+        int expected = 25;
         assertEquals(result, expected);
     }
 
@@ -50,7 +50,7 @@ public class MaxTest {
         int right = 15;
         int addition = 5;
         int result = Max.max(left, right, addition);
-        int expected = 20;
+        int expected = 15;
         assertEquals(result, expected);
     }
 }
