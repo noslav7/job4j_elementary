@@ -37,18 +37,18 @@ public class MaxTest {
     public void whenMax25To0Then5() {
         int left = 0;
         int right = 25;
-        short addition = 15;
-        byte value = 2;
+        int addition = 15;
+        int value = 2;
         int result = Max.max(left, right, addition, value);
         int expected = 80;
         assertEquals(result, expected);
     }
 
     @Test
-    public void whenMax5To15Then20() {
+   public void whenMax5To15Then20() {
         int left = 5;
         int right = 15;
-        short addition = 5;
+        int addition = 5;
         int result = Max.max(left, right, addition);
         int expected = 20;
         assertEquals(result, expected);
