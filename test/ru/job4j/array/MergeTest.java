@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class MergeTest {
 
     @Test
-    public void whenBothEmpty() {
+    public void  whenBothEmpty() {
         int[] expect = new int[0];
         int[] result = Merge.merge(
                 new int[0],
