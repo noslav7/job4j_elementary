@@ -1,23 +1,24 @@
 package ru.job4j.array;
 
 import org.junit.Test;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
-public class EvenPrintTest {
+public class OddPrintTest {
 
     @Test
     public void whenNonEmpty() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        EvenPrint.print(new int[] {1, 2, 3, 4});
+        OddPrint.print(new int[] {1, 2, 3});
         String ln = System.lineSeparator();
         assertThat(out.toString(), is(
-                "4" + ln
-                        + "2" + ln
+                "1" + ln
+                        + "3" + ln
         ));
     }
 
@@ -25,7 +26,8 @@ public class EvenPrintTest {
     public void whenEmpty() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        EvenPrint.print(new int[] {1, 3, 5});
+        OddPrint.print(new int[] {2, 4, 6});
         assertThat(out.toString(), is(""));
     }
+
 }
