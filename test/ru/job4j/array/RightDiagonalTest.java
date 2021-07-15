@@ -1,6 +1,9 @@
 package ru.job4j.array;
 
-/*
+import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
+
 public class RightDiagonalTest {
 
     @Test
@@ -13,5 +16,4 @@ public class RightDiagonalTest {
         int[] expected = {3, 5, 7};
         assertArrayEquals(expected, RightDiagonal.diagonal(data));
     }
-
-} */
+}
