@@ -1,6 +1,8 @@
 package ru.job4j.array;
 
-/*
+
+import org.junit.Test;
+import static org.junit.Assert.*;
 public class MergeRowsTest {
 
     @Test
@@ -14,4 +16,4 @@ public class MergeRowsTest {
         int[] out = MergeRows.merge(input);
         assertArrayEquals(expected, out);
     }
-} */
+}

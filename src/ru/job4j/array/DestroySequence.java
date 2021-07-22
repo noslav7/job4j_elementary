@@ -1,21 +1,16 @@
 package ru.job4j.array;
 
 public class DestroySequence {
+/*
     public static char[] destroy(char[] seq) {
-        int[] destroyInt = new int[seq.length];
-        for (int i = 0; i < seq.length; i++) {
-            int numberFromChar = Character.getNumericValue(i);
-            destroyInt[i] = numberFromChar;
-        }
-       for (int i = 0; i < destroyInt.length; i++) {
-                if (i < 6) {
-                    destroyInt[i] = 0;
-                }
-                if (i > destroyInt.length - 6) {
-                    destroyInt[i] = 1;
-                }
-        }
-
-        return seq;
-    }
+        String destroyStringBegins = "00000";
+        String destroyStringEnds = "11111";
+        char[] startArray = destroyStringBegins.toCharArray();
+        char[] endArray = destroyStringEnds.toCharArray();
+        for (int i = 0; i < 5; i++) {
+            seq[i] = startArray[i];
+            seq[seq.length - 6 + i] = endArray[i];
+            }
+       return seq;
+    }*/
 }

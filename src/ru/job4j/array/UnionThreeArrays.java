@@ -1,6 +1,7 @@
 package ru.job4j.array;
-/*
+
 public class UnionThreeArrays {
+    /*
     public static int[] union(int[] left, int[] middle, int[] right) {
         int[] result = new int[right.length + 1];
         result[0] = left[0];
@@ -34,6 +35,5 @@ public class UnionThreeArrays {
             }
         }
         return result;
-    }
+    }*/
 }
- */
