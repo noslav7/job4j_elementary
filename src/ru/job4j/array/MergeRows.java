@@ -6,7 +6,7 @@ public class MergeRows {
         int[] newArray = new int[data.length * data.length];
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
-                newArray[i] = data[i][j];
+                  newArray[i * 3 + j] = data[i][j];
             }
         }
         return newArray;
