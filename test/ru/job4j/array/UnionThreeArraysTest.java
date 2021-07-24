@@ -1,7 +1,12 @@
 package ru.job4j.array;
 
+import org.junit.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+
 public class UnionThreeArraysTest {
-/*    @Test
+   @Test
     public void union() {
         int[] left = {1, 2, 3, 4, 5};
         int[] middle = {6, 7, 8, 9, 10};
@@ -19,5 +24,5 @@ public class UnionThreeArraysTest {
         int[] rsl = UnionThreeArrays.union(left, middle, right);
         int[] expected = {1, 7, 5, 9, 3};
         assertThat(rsl, is(expected));
-    }*/
+    }
 }
