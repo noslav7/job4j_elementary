@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
 import java.util.ArrayList;
-/*
+
 public class ArrayWithoutEvenElements {
     public static int[] changeData(int[] data) {
         ArrayList<Integer> uneven = new ArrayList<>();
@@ -10,8 +10,10 @@ public class ArrayWithoutEvenElements {
                 uneven.add(data[i]);
             }
             }
-        return (int) uneven.toArray(new Integer[0]);
+        int[] unevenArray = new int[uneven.size()];
+        for (int i = 0; i < uneven.size(); i++) {
+            unevenArray[i] = uneven.get(i);
+        }
+        return unevenArray;
         }
     }
-
-*/
