@@ -1,14 +1,18 @@
 package ru.job4j.array;
 
 public class NumberToArray {
-    /*
     public static int[] resolve(int number) {
-        String strNumber = String.valueOf(number);
-        int[] intArray = new int[strNumber.length()];
-        String temp = "";
-        for (int i = 0; i < number.length() / 2; i++) {
-            temp = strNumber[i];
-
+        String temp = Integer.toString(number);
+        int[] newIntArray = new int[temp.length()];
+        for (int i = 0; i < temp.length(); i++) {
+            newIntArray[i] = temp.charAt(i) - '0';
         }
-    }*/
+        int temporary = 0;
+        for (int i = 0; i < newIntArray.length / 2; i++) {
+            temporary = newIntArray[i];
+            newIntArray[i] = newIntArray[newIntArray.length - 1 - i];
+            newIntArray[newIntArray.length - 1 - i] = temporary;
+        }
+        return newIntArray;
+    }
 }

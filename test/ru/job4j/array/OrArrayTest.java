@@ -1,7 +1,9 @@
 package ru.job4j.array;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
 public class OrArrayTest {
-/*
+
     @Test
     public void test() {
         assertArrayEquals(new int[] {}, OrArray.or(new int[] {}, new int[] {}));
@@ -11,5 +13,4 @@ public class OrArrayTest {
         assertArrayEquals(new int[] {1, 2, 3}, OrArray.or(new int[] {1, 2}, new int[] {1, 2, 3}));
         assertArrayEquals(new int[] {1, 2, 3}, OrArray.or(new int[] {1}, new int[] {2, 3}));
     }
-*/
 }
