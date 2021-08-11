@@ -1,31 +1,34 @@
 package ru.job4j.array;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class OrArray {
-    /*
+
     public static int[] or(int[] left, int[] right) {
-        boolean found = true;
-        int count = 0;
-        int searchValue = 0;
+        int foundEqual = 0;
         for (int i = 0; i < left.length; i++) {
-            searchValue = left[i];
             for (int j = 0; j < right.length; j++) {
-                if (searchValue != right[j]) {
-                    found = false;
-                    count++;
+                if (left[i] == right[j]) {
+                    foundEqual++;
                     break;
                 }
             }
         }
-        int[] unitedElements = new int[count];
+        int[] unitedElements = new int[left.length + right.length - foundEqual];
+        for (int i = 0; i < left.length; i++) {
+            unitedElements[i] = left[i];
+        }
         int cell = 0;
         for (int i = 0; i < left.length; i++) {
             for (int j = 0; j < right.length; j++) {
                 if (left[i] != right[j]) {
-                    unitedElements[cell] = right[j];
+                    unitedElements[left.length + cell] = right[j];
                     cell++;
                 }
             }
         }
         return unitedElements;
-    }*/
+    }
 }
+
