@@ -2,7 +2,7 @@ package ru.job4j.array;
 
 import java.util.Objects;
 
-public class Cinema {
+public class  Cinema {
     public static Place checkEmptyPlace(Place[][] places) {
         for (int i = 0; i < places.length; i++) {
             for (int z = 0; z < places[i].length; z++) {

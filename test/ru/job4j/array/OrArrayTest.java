@@ -1,6 +1,6 @@
 package ru.job4j.array;
 
-public class OrArrayTest {
+public class  OrArrayTest {
 /*
     @Test
     public void test() {
