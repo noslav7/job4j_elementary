@@ -1,32 +1,38 @@
 package ru.job4j.array;
 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
 public class  OrArray {
 
     public static int[] or(int[] left, int[] right) {
-        int[] unionArray = new int[left.length + right.length];
+        int[] mergedArray = new int[left.length + right.length];
+        int i = 0;
+        int j = 0;
         int k = 0;
-        for (int cell : left) {
-            unionArray[k++] = cell;
+        while (i < left.length) {
+        mergedArray[k] = left[i];
+        k++;
+        i++;
         }
-        for (int cell : right) {
-            unionArray[k++] = cell;
+        while (j < right.length) {
+        mergedArray[k] = right[j];
+        k++;
+        j++;
         }
-        int len = unionArray.length;
-        for (int i = 0; i < len - 1; i++) {
-            for (int j = i + 1; j < len; j++) {
-                if (unionArray[i] == unionArray[j]) {
-                    for (k = j; k < len - 1; k++) {
-                        unionArray[k] = unionArray[k + 1];
-                        --len;
-                    }
-                }
-            }
+        Set setWithNoDuplicates = new HashSet<>();
+        for (int m = 0; m < mergedArray.length; m++) {
+        setWithNoDuplicates.add(mergedArray[m]);
         }
-        int[] unitedShortArray = new int[len];
-        for (int i = 0; i < unitedShortArray.length; i++) {
-            unitedShortArray[i] = unionArray[i];
+        Iterator it = setWithNoDuplicates.iterator();
+        int[] mergedArrayWithNoDuplicates = new int[setWithNoDuplicates.size()];
+        int n = 0;
+        while (it.hasNext()) {
+        mergedArrayWithNoDuplicates[n] = (int) it.next();
+        n++;
         }
-        return unitedShortArray;
+        return mergedArrayWithNoDuplicates;
     }
 }
 
