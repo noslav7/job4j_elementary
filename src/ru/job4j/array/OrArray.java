@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class  OrArray {
-
     public static int[] or(int[] left, int[] right) {
         int[] mergedArray = new int[left.length + right.length];
         int i = 0;
