@@ -1,7 +1,11 @@
 package ru.job4j.array;
 
+import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
+
 public class SymmetricDiffTest {
-/*
+
     @Test
     public void test() {
         assertArrayEquals(new int[] {}, SymmetricDiff.diff(new int[] {}, new int[] {}));
@@ -11,5 +15,4 @@ public class SymmetricDiffTest {
         assertArrayEquals(new int[] {1, 3}, SymmetricDiff.diff(new int[] {1, 2}, new int[] {2, 3}));
         assertArrayEquals(new int[] {1, 2, 3, 4}, SymmetricDiff.diff(new int[] {1, 2}, new int[] {3, 4}));
     }
-*/
 }
