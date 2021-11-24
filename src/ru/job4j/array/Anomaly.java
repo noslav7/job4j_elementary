@@ -15,15 +15,15 @@ public class Anomaly {
             }
             if (j == 2) {
                 result[count++] = temp;
-                    j = 0;
+                temp = new int[2];
+                j = 0;
             }
         }
-        if (j == 1 && count == 0) {
-            temp = new int[2];
-            temp[1] = temp[0];
-            result[0] = temp;
-            count++;
-        }
+            if (j == 1 && count == 0) {
+                temp[1] = temp[0];
+                result[0] = temp;
+                count++;
+            }
         return Arrays.copyOf(result, count);
     }
 }
