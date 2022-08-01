@@ -12,7 +12,6 @@ public class RightShift {
         }
     }
 
-    // метод делает сдвиг с шагом 1
     private static void shift(int[] nums) {
         int size = nums.length;
         for (int i = 0; i < 1; i++) {
