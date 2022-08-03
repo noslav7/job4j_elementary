@@ -6,7 +6,7 @@ public class JavaNameValidator {
         if (Character.isLetter(name.charAt(0)) && Character.isLowerCase(name.charAt(0))) {
             char[] nameChars = name.toCharArray();
             for (int i = 0; i < nameChars.length; i++) {
-                if (!(Character.isLetter(i) || Character.isDigit(i))) {
+                if (!isSpecialSymbol(i) || isUpperLatinLetter(i) || isLowerLatinLetter(i)) {
                     valid = false;
                     break;
                 }
@@ -15,5 +15,17 @@ public class JavaNameValidator {
             valid = false;
         }
         return valid;
+    }
+
+    public static boolean isSpecialSymbol(int code) {
+        return false;
+    }
+
+    public static boolean isUpperLatinLetter(int code) {
+        return false;
+    }
+
+    public static boolean isLowerLatinLetter(int code) {
+        return false;
     }
 }
