@@ -2,10 +2,14 @@ package ru.job4j.type;
 
 public class Task36 {
     public static void firstLastChange(int number) {
-        int first, middle, last;
+        int first, last;
+        String middle;
+        int middle_hundreds, middle_tens;
         first = number / 1000;
-        middle = (number % 1000) / 10;
+        middle_hundreds = (number % 1000) / 100;
+        middle_tens = ((number % 1000) % 100) / 10;
         last = ((number % 1000) % 100) % 10;
-        System.out.println(Integer.parseInt("" + last + middle + first));
+        middle = "" + middle_hundreds + middle_tens;
+        System.out.println(Integer.parseInt(last + middle + first));
     }
 }
