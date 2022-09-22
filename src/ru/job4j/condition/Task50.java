@@ -17,10 +17,12 @@ public class Task50 {
             sum2 = (sum2 * 10) + remainder2;
             num2 = num2 / 10;
         }
-        if (temp == sum) {
-            System.out.println("Да");
+        if (num1 > num2) {
+            System.out.println(num1);
+        } else if (num2 > num1) {
+            System.out.println(num2);
         } else {
-            System.out.println("Нет");
+            System.out.println("Одинаковые");
         }
     }
 }
