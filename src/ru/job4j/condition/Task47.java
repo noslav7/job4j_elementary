@@ -6,10 +6,12 @@ public class Task47 {
         num1 = number / 100;
         num2 = number % 100 / 10;
         num3 = number % 100 % 10;
+        String stringNumMore500 = "" + num3 + num2 + num1;
+        String stringNumLess500 = "" + num1 + num3 + num2;
         if (number > 500) {
-            System.out.println("" + num3 + num2 + num1);
+            System.out.println(Integer.parseInt(stringNumMore500));
         } else {
-            System.out.println("" + num1 + num3 + num2);
+            System.out.println(Integer.parseInt(stringNumLess500));
         }
     }
 }
