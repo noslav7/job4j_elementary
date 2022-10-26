@@ -1,6 +1,6 @@
 package ru.job4j.loop;
 
-public class Task76 {
+public class Task77 {
     public static void loop(int num1, int num2) {
         int sum = 0;
         if (num1 > num2) {
@@ -16,10 +16,6 @@ public class Task76 {
                 }
             }
         }
-        if (sum % 2 == 0) {
-            System.out.println("Да");
-        } else {
-            System.out.println("Нет");
-        }
+        System.out.println(sum);
     }
 }
