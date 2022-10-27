@@ -7,11 +7,16 @@ public class Task85 {
         for (int i = 1; i <= months; i++) {
             count++;
             if (count == 1) {
-                sum = sum + money * (double) percent;
+                sum = money + money * ((double) percent / 100);
             } else if (count > 1) {
-                sum = sum + sum * (double) percent;
+                sum = sum + sum * ((double) percent / 100);
             }
         }
         System.out.printf("%.2f", sum);
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        loop(10000, 10, 10);
     }
 }
