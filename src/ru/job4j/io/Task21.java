@@ -8,18 +8,18 @@ public class Task21 {
         int columnCount = in.nextInt();
         String star = "*";
         String space = " ";
-        // YOUR CODE
+        /* YOUR CODE  */
 
 
 
         int row,r,c,d;
-        //creating object
+        /*creating object*/
         Scanner s = new Scanner(System.in);
-        // entering the number of row
+        /* entering the number of row*/
         System.out.print("Enter rows : ");
         row = s.nextInt();
-        //outer for loop
-        // this for loop is responsible to print upper hollow part.
+        /*outer for loop
+        this for loop is responsible to print upper hollow part.*/
         for (r = 1; r<= row ; r++)
         {
             for (c = 1; c < r; c++)
@@ -33,7 +33,7 @@ public class Task21 {
             }
             System.out.println();
         }
-        // this for loop is responsible to print lower hollow part.
+        /* this for loop is responsible to print lower hollow part.*/
         for (r = row -1; r >= 1;r--)
         {
             for (c = 1; c < r; c++)
