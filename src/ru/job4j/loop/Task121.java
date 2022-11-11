@@ -4,22 +4,18 @@ import java.util.StringJoiner;
 
 public class Task121 {
     public static void loop(int[] nums) {
-        StringJoiner stringJoiner = new StringJoiner(" ");
+        StringJoiner joiner = new StringJoiner(", ");
         for (int i = 0; i < nums.length; i++) {
             int sum = 0;
-            if (nums[i] % 10 == 0) {
-
+            int number = nums[i];
+            while (number != 0) {
+                int remains = number % 10;
+                sum = sum + number;
+                number = number / 10;
             }
-            while (nums[i] != 0) {
-                int remaining = nums[i] % 10;
-                sum = sum + remaining;
-                nums[i] = nums[i] % 10;
-
-            }
-            String sumString = String.valueOf(sum);
-            stringJoiner.add(sumString);
+            joiner.add(String.valueOf(sum));
         }
-        System.out.println(stringJoiner);
+        System.out.println(joiner);
     }
 
     public static void main(String[] args) {
