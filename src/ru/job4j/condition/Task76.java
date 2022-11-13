@@ -21,6 +21,9 @@ public class Task76 {
         if (num1 == num3) {
             count = 2;
         }
+        if (num1 != num2 && num2 != num3) {
+            count = 1;
+        }
         System.out.println(count);
     }
 }

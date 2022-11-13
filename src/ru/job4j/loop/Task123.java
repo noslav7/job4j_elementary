@@ -31,8 +31,4 @@ public class Task123 {
         }
         System.out.println(joiner);
     }
-
-    public static void main(String[] args) {
-        loop(6);
-    }
 }
