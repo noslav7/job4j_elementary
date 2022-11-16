@@ -2,16 +2,25 @@ package ru.job4j.loop;
 
 public class Task142 {
     public static void loop(int num) {
-        if (num == 11) {
-            System.out.println("Нет");
-            return;
+        int firstNumber = 0;
+        int secondNumber = 1;
+        int thirdNumber = 0;
+        for (int i = 2; i <= num; i++) {
+                thirdNumber = firstNumber + secondNumber;
+                firstNumber = secondNumber;
+                secondNumber = thirdNumber;
+                if (thirdNumber >= num) {
+                    break;
+                }
         }
-        double property = 5 * num * num - 4;
-        double squareFromProperty = Math.sqrt(property);
-        if (squareFromProperty * squareFromProperty == property) {
+        if (thirdNumber == num || num == 2 || num == 1) {
             System.out.println("Да");
         } else {
             System.out.println("Нет");
         }
+    }
+
+    public static void main(String[] args) {
+        loop(144);
     }
 }
