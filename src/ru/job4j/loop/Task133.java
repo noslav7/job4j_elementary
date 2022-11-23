@@ -19,8 +19,4 @@ public class Task133 {
         }
         System.out.println(stringJoiner);
     }
-
-    public static void main(String[] args) {
-        loop(6);
-    }
 }

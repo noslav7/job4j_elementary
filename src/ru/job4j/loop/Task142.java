@@ -19,8 +19,4 @@ public class Task142 {
             System.out.println("Нет");
         }
     }
-
-    public static void main(String[] args) {
-        loop(144);
-    }
 }
