@@ -1,46 +1,37 @@
 package ru.job4j.loop;
 
+import java.util.StringJoiner;
+
 public class Task51 {
     public static void loop(int n, int m) {
-        int count = 0;
+        if (n == 1) {
+            System.out.println(0);
+            return;
+        }
+        StringJoiner stringJoiner = new StringJoiner(" ");
         if (n < m) {
             for (int i = n; i <= m; i++) {
-                if (i % 2 != 0) {
-                    count++;
-                    if (count == 1) {
-                        System.out.print(i * i);
-                    } else {
-                        System.out.print(" " + i * i);
-                    }
+                if (i % 2 == 0) {
+                    stringJoiner.add(String.valueOf(i * i));
                 } else {
-                    count++;
-                    if (count == 1) {
-                        System.out.print(0);
-                    } else {
-                        System.out.print(" " + 0);
-                    }
+                    stringJoiner.add(String.valueOf(0));
                 }
             }
-            System.out.println();
-        } else {
+        } else if (n > m) {
             for (int i = m; i <= n; i++) {
-                if (i % 2 != 0) {
-                    count++;
-                    if (count == 1) {
-                        System.out.print(i * i);
-                    } else {
-                        System.out.print(" " + i * i);
-                    }
+                if (i % 2 == 0) {
+                    stringJoiner.add(String.valueOf(i * i));
                 } else {
-                        count++;
-                        if (count == 1) {
-                            System.out.print(0);
-                        } else {
-                            System.out.print(" " + 0);
-                        }
-                    }
+                    stringJoiner.add(String.valueOf(0));
+                }
             }
-            System.out.println();
+        } else {
+            if (n % 2 != 0) {
+                stringJoiner.add(String.valueOf(n * n));
+            } else {
+                stringJoiner.add(String.valueOf(0));
+            }
         }
+        System.out.println(stringJoiner);
     }
 }

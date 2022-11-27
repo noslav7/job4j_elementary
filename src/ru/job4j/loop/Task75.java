@@ -10,7 +10,7 @@ public class Task75 {
                 sum = sum + i;
             }
         }
-        if (sum % count == 0) {
+        if (sum % count == 0 && num % count == 0) {
             System.out.println("Да");
         } else {
             System.out.println("Нет");
