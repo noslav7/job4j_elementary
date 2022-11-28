@@ -15,7 +15,7 @@ public class Task169 {
                 System.out.print(" ");
             }
             for(k = i; k <= columnCount - 1; k++) {
-                System.out.print("* ");
+                System.out.print("*");
             }
             System.out.println();
         }
@@ -25,7 +25,7 @@ public class Task169 {
                 System.out.print(" ");
             }
             for(k = i; k <= columnCount - 1; k++) {
-                System.out.print("* ");
+                System.out.print("*");
             }
             System.out.println();
         }
