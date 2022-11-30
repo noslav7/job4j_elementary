@@ -18,13 +18,10 @@ public class Task73 {
                     stringJoinerSecond.add(String.valueOf(arr[right]));
                 }
                 left++;
-                right++;
+                right--;
             }
-            System.out.println(stringJoinerFirst);
-            System.out.println(stringJoinerSecond);
-            System.out.println(arr[arr.length / 2]);
         } else {
-            while (left < arr.length / 2 && right > arr.length / 2) {
+            while (left <= arr.length / 2 && right >= arr.length / 2) {
                 if (left % 2 == 0) {
                     stringJoinerFirst.add(String.valueOf(arr[left]));
                     stringJoinerFirst.add(String.valueOf(arr[right]));
@@ -33,10 +30,18 @@ public class Task73 {
                     stringJoinerSecond.add(String.valueOf(arr[right]));
                 }
                 left++;
-                right++;
+                right--;
             }
-            System.out.println(stringJoinerFirst);
-            System.out.println(stringJoinerSecond);
         }
+        System.out.println(stringJoinerFirst);
+        System.out.println(stringJoinerSecond);
+        if (arr.length % 2 != 0) {
+            System.out.println(arr[arr.length / 2]);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {5, 4, 3, 2};
+        array(arr);
     }
 }
