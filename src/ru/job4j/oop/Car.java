@@ -3,6 +3,7 @@ package ru.job4j.oop;
 public class Car {
     private String brand;
     private String model;
+    private static String carManual = "Инструкция к автомобилю";
 
     public Car(String brand, String model) {
         this.brand = brand;
@@ -45,5 +46,13 @@ public class Car {
         Car car = new Car("Марка", "Модель");
         Car.TripComputer tripComputer = car.new TripComputer();
         return tripComputer;
+    }
+
+    public static class Manual {
+
+        public static String getManual() {
+            Car car = new Car("Марка", "Модель");
+            return "Модель: " + car.model + ", Инструкция: " + carManual;
+        }
     }
 }
