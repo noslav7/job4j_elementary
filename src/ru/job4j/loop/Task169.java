@@ -10,8 +10,8 @@ public class Task169 {
         String space = " ";
         int i, j, k;
 
-        for (i = 0 ; i <= columnCount - 1; i++ ) {
-            for (j = 0 ; j < i; j++ ) {
+        for (i = 0 ; i <= columnCount - 1; i = i + 2) {
+            for (j = 0 ; j < i; j = j + 2) {
                 System.out.print(" ");
             }
             for(k = i; k <= columnCount - 1; k++) {
@@ -20,8 +20,8 @@ public class Task169 {
             System.out.println();
         }
 
-        for (i = columnCount - 1; i >= 0; i-- ) {
-            for (j = 0 ; j < i; j++ ) {
+        for (i = columnCount - 3; i >= 0; i = i - 2 ) {
+            for (j = 0 ; j < i; j = j + 2) {
                 System.out.print(" ");
             }
             for(k = i; k <= columnCount - 1; k++) {
