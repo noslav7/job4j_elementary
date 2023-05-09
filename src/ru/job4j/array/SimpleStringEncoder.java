@@ -12,12 +12,13 @@ public class SimpleStringEncoder {
                     result += symbol + "" + counter;
                 }
             } else {
+                result += symbol;
                 if (counter != 1) {
-                    result += symbol + "" + counter;
-                    counter = 1;
-                } else {
-                    result += symbol + "";
+                    result += counter;
                 }
+
+                counter = 1;
+
                 if (i == input.length() - 1) {
                     result += input.charAt(i);
                 } else {
