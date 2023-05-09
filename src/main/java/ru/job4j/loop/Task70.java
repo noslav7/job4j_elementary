@@ -5,7 +5,6 @@ public class Task70 {
         int in = 0;
         int on = 0;
 
-
         for (int i = 0; i < coords.length; i = i + 2) {
             int xaSquare = ((coords[i]) - x) * ((coords[i]) - x);
             int ybSquare = ((coords[i + 1]) - y) * ((coords[i + 1]) - y);

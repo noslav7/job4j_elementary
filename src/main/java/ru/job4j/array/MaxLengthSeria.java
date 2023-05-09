@@ -5,7 +5,7 @@ public class MaxLengthSeria {
         int maxLength = 1;
         int subArrayLength = 1;
         for (int i = 1; i < array.length; i++) {
-            if (array[i] == array[i - 1] || array[i] == array[i-1] +1) {
+            if (array[i] == array[i - 1] || array[i] == array[i - 1] + 1) {
                 subArrayLength++;
                 maxLength = Math.max(maxLength, subArrayLength);
             } else {

@@ -8,9 +8,9 @@ public class Task13 {
         double a = input.nextDouble();
         double b = input.nextDouble();
 
-        System.out.println(a+b);
-        System.out.println(a-b);
-        System.out.println(a*b);
-        System.out.println(a/b);
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
     }
 }

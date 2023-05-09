@@ -7,16 +7,16 @@ public class Task57 {
             System.out.println("Ошибка");
             return;
         }
-        if ((a < 90 && b < 90 && c < 90) && !( a == b || b == c || a == c)) {
+        if ((a < 90 && b < 90 && c < 90) && !(a == b || b == c || a == c)) {
             System.out.println("Остроугольный");
         }
-        if (a == 90 || b == 90 || c == 90 ) {
+        if (a == 90 || b == 90 || c == 90) {
             System.out.println("Прямоугольный");
         }
         if (a > 90 || b > 90 || c > 90) {
             System.out.println("Тупоугольный");
         }
-        if ( a == b || b == c || a == c) {
+        if (a == b || b == c || a == c) {
             System.out.println("Равнобедренный");
         }
         if (a == b && b == c) {

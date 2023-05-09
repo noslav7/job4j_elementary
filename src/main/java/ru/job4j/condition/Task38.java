@@ -7,7 +7,7 @@ public class Task38 {
         num2 = number % 10;
         if (num1 > num2) {
             System.out.println(num1);
-        } else if (num1 < num2){
+        } else if (num1 < num2) {
             System.out.println(num2);
         } else {
             System.out.println("Равны");

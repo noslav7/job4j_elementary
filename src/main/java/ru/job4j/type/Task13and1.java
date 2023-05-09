@@ -2,7 +2,7 @@ package ru.job4j.type;
 
 import java.util.Scanner;
 
-public class Task13_1 {
+public class Task13and1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int dollars = input.nextInt();

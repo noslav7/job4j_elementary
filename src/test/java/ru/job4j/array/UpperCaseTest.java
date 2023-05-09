@@ -2,9 +2,6 @@ package ru.job4j.array;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.job4j.array.UpperCase;
-
-import static org.junit.Assert.assertArrayEquals;
 
 public class UpperCaseTest {
 
@@ -14,5 +11,4 @@ public class UpperCaseTest {
         char[] expect = "ALPHA-123".toCharArray();
         Assert.assertArrayEquals(expect, UpperCase.toUpperCase(input));
     }
-
 }

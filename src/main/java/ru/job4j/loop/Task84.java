@@ -13,7 +13,7 @@ public class Task84 {
                 numArray[i] = a2;
                 sum = a1 + a2;
             } else if (count > 2) {
-                numArray[i] = (numArray[i - 2] + numArray[i- 1]);
+                numArray[i] = (numArray[i - 2] + numArray[i - 1]);
                 sum = sum + numArray[i];
             }
         }

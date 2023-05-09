@@ -18,7 +18,7 @@ public class Task148 {
         }
         int childrenLeft = requiredChildren - soldChildren;
         int adultsLeft = requiredAdults - soldAdults;
-        System.out.println( "Группы: " + countGroups + ", Взрослых: " + soldAdults + ", детей: " + soldChildren
+        System.out.println("Группы: " + countGroups + ", Взрослых: " + soldAdults + ", детей: " + soldChildren
                 + ", осталось билетов взр: " + adultsLeft + ", осталось билетов дет: " + childrenLeft);
-}
+    }
 }

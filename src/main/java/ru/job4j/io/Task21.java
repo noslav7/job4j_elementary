@@ -10,9 +10,7 @@ public class Task21 {
         String space = " ";
         /* YOUR CODE  */
 
-
-
-        int row,r,c,d;
+        int row, r, c, d;
         /*creating object*/
         Scanner s = new Scanner(System.in);
         /* entering the number of row*/
@@ -20,13 +18,12 @@ public class Task21 {
         row = s.nextInt();
         /*outer for loop
         this for loop is responsible to print upper hollow part.*/
-        for (r = 1; r<= row ; r++)
-        {
-            for (c = 1; c < r; c++)
+        for (r = 1; r <= row ; r++) {
+            for (c = 1; c < r; c++) {
                 System.out.print(" ");
-            for (c = r; c <= row ; c++)
-            {
-                if(r == 1 || c == r|| c == row )
+            }
+            for (c = r; c <= row; c++) {
+                if (r == 1 || c == r || c == row )
                     System.out.print("* ");
                 else
                     System.out.print("  ");
@@ -34,16 +31,16 @@ public class Task21 {
             System.out.println();
         }
         /* this for loop is responsible to print lower hollow part.*/
-        for (r = row -1; r >= 1;r--)
-        {
-            for (c = 1; c < r; c++)
+        for (r = row -1; r >= 1;r--) {
+            for (c = 1; c < r; c++) {
                 System.out.print(" ");
-            for (c = r; c <= row; c++)
-            {
-                if(r == 1 || c == r || c == row)
+            }
+            for (c = r; c <= row; c++) {
+                if (r == 1 || c == r || c == row) {
                     System.out.print("* ");
-                else
+                } else {
                     System.out.print("  ");
+                }
             }
             System.out.println();
         }

@@ -6,7 +6,7 @@ public class RightShift {
         for (int i = 0; i < count; i++) {
             int temp = nums[size - 1];
             for (int j = size - 1; j > 0; j--) {
-                nums[j] = nums[j-1];
+                nums[j] = nums[j - 1];
             }
             nums[0] = temp;
         }
@@ -17,7 +17,7 @@ public class RightShift {
         for (int i = 0; i < 1; i++) {
             int temp = nums[size - 1];
             for (int j = size - 1; j > 0; j--) {
-                nums[j] = nums[j-1];
+                nums[j] = nums[j - 1];
             }
             nums[0] = temp;
         }

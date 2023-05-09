@@ -9,7 +9,7 @@ public class Task59 {
             System.out.println("Нет решения");
             return;
         } else {
-            double result = - (double) b / (double) a;
+            double result = -(double) b / (double) a;
             double moduleResult = Math.abs(result);
             int remainsInt = (int) result;
             double remains = (double) remainsInt;
@@ -24,6 +24,6 @@ public class Task59 {
     }
 
     public static void main(String[] args) {
-        getLinearEquation(4,6);
+        getLinearEquation(4, 6);
     }
 }

@@ -9,8 +9,8 @@ public class Task74 {
         num42 = num4 % 1000 / 100;
         num43 = num4 % 1000 % 100 / 10;
         num44 = num4 % 1000 % 100 % 10;
-        if ((num21 == num41 && num22 == num42) || (num21 == num42 && num22 == num43) ||
-                (num21 == num43 && num22 == num44)) {
+        if ((num21 == num41 && num22 == num42) || (num21 == num42 && num22 == num43)
+                || (num21 == num43 && num22 == num44)) {
             System.out.println("Да");
         } else {
             System.out.println("Нет");
