@@ -1,4 +1,4 @@
-package ru.job4j.checkStyle;
+package ru.job4j.checkstyle;
 
 public class Broken {
     private int sizeOfEmpty = 10;
