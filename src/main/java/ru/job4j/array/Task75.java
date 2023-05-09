@@ -56,7 +56,7 @@ public class Task75 {
                 stringJoinerMax.add(String.valueOf(i));
             } else if (counts[i] == minCount && maxCount != minCount) {
                 stringJoinerMin.add(String.valueOf(i));
-            } else if (counts[i] == 0){
+            } else if (counts[i] == 0) {
                 stringJoinerNotExist.add(String.valueOf(i));
             }
         }
