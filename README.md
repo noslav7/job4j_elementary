@@ -1,4 +1,3 @@
-# job4j
-Проект содержит решения блока "Базовый синтаксис" курса Job4j.
-
-[![codecov](https://codecov.io/gh/noslav7/job4j_elementary/branch/master/graph/badge.svg?token=6OY43T10ZN)](https://codecov.io/gh/noslav7/job4j_elementary)
+# job4j_elementary
+Ihe repository contains solutions of tasks of "Basic Syntax" module of "Job4j" course.
+The tasks involve usage of if-rlse statementsm, loops arrays etc.
